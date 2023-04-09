@@ -4,6 +4,7 @@ on:
       - https://feeds.feedburner.com/ruanyifeng
       - https://rss.ximing.ren/douban/movie/playing/8
       - https://rss.ximing.ren/juejin/trending/ios/monthly
+      - https://rss.ximing.ren/zhihu/posts/people/phodal
 #      - https://rss.ximing.ren/juejin/trending/frontend/monthly
 jobs:
   request:
