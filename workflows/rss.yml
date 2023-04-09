@@ -6,8 +6,8 @@ on:
       - https://rss.ximing.ren/juejin/trending/ios/monthly
 #      - https://rss.ximing.ren/juejin/trending/frontend/monthly
 jobs:
-  print:
-    name: Print
+  request:
+    name: Make a HTTP Request
     runs-on: ubuntu-latest
     steps:
       - name: Make a HTTP Request
