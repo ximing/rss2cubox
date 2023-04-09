@@ -2,6 +2,10 @@ on:
   rss:
     url:
       - https://feeds.feedburner.com/ruanyifeng
+      - https://rss.ximing.ren/douban/movie/playing/8
+      - https://rss.ximing.ren/jianshu/trending/weekly
+      - https://rss.ximing.ren/juejin/trending/ios/monthly
+      - https://rss.ximing.ren/juejin/trending/frontend/monthly
 jobs:
   print:
     name: Print
