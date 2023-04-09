@@ -1,6 +1,7 @@
 on:
   rss:
-    url: https://hnrss.org/newest?points=300&count=3
+    url:
+      - https://feeds.feedburner.com/ruanyifeng
 jobs:
   print:
     name: Print
@@ -15,3 +16,16 @@ jobs:
           echo title: $title
           echo contentSnippet: $contentSnippet
           echo link: $link
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
+        with:
+          url: ${{secrets.CUBOX_API}}
+          method: POST
+          body: |
+            {
+             "type":"url",
+             "link":"${{ on.rss.outputs.link }}",
+             "content":"<<<${{on.rss.outputs.contentSnippet}}>>>",
+             "title": "${{ on.rss.outputs.title }}",
+             "folder":"RSS"
+            }
