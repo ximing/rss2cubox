@@ -8,6 +8,7 @@ on:
       - https://rss.ximing.ren/zhihu/people/pins/tao-wen-54
       - https://rss.ximing.ren/zhihu/posts/people/tao-wen-54
       - https://rss.ximing.ren/zhihu/posts/people/su-han-ruo
+      - https://coolshell.cn/feed
 #      - https://rss.ximing.ren/juejin/trending/frontend/monthly
 jobs:
   request:
